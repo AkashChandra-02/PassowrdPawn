@@ -8,4 +8,5 @@ This was by by a team of 4, 2 of which were beginners. This hasn't been used sin
 This was just to see if we could do it.  
 
 I'd like to thank wwwtyro for his Javascript encryption libary, which was the backbone of this project.
-You can fond it here:  https://github.com/wwwtyro/cryptico
+
+You can find it here:  https://github.com/wwwtyro/cryptico
