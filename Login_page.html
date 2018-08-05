@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="login_style.css">
+  <script language="JavaScript" type="text/javascript" src="jsbn.js"></script>
+  <script language="JavaScript" type="text/javascript" src="random.js"></script>
+  <script language="JavaScript" type="text/javascript" src="hash.js"></script>
+  <script language="JavaScript" type="text/javascript" src="rsa.js"></script>
+  <script language="JavaScript" type="text/javascript" src="aes.js"></script>
+  <script language="JavaScript" type="text/javascript" src="api.js"></script>
+  <script language="JavaScript" type="text/javascript" src="sjcl.js"></script>
+<script>
+var mpass, hashed
+var Private = ""
+function generateKeys(){
+  Private	= Math.round(Math.random()* 10000000000)
+  localStorage.setItem("encoder" , Private)
+  localStorage.setItem("mpass", SHA1(document.getElementById("mpass").value))
+}
+function Login(){
+  localStorage.setItem("mpass", document.getElementById("mpass").value)
+  hashed = SHA1(document.getElementById("mpass").value)
+  var preset = localStorage.getItem('HASH')
+  console.log(preset)
+  console.log(hashed)
+
+  if (hashed != preset){
+    document.GetElementId(a).action = "Login_page.html"
+  }
+}
+</script>
+
+  <body>
+    <div class="main">
+      <title>PasswordPawn</title>
+      <h1>PasswordPawn</h1>
+      <hr>
+    </div>
+
+    <div background-color: blue class="login">
+      <form action="PasswordPawn.html">
+      <label for="username">Username:</label>
+      <input type="text" id="usr" class="usr" name="username" placeholder="Your username.." >
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" class="pass" id="mpass" name="password" placeholder="Your master password.." >
+		<br><br>
+
+        <center>
+
+	<form action="PasswordPawn.html" class="buttons">
+		<input type="submit" value="Sign up" class = "buttons" onclick = 'generateKeys()'>
+		<input type="submit" value="Log in"  class = "buttons" onclick = 'Login()'>
+	</form>
+
+        </center>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <div class="main">
+         <title>Password Pawn</title>
+           <h2>PasswordPawn</h2>
+            <hr>
+
+
+         <title>Conquer Russia</title>
+         <link rel="stylesheet" type="text/css" href="style.css">
+     <script>
+        var hardWork = 0;
+        var soldiers = 0;
+         function genWork(){
+            hardWork = hardWork+1;
+
+            document.getElementById("workCounter").innerHTML = hardWork;
+         }
+         function buySoldier(){
+            if (hardWork >= 20){
+                hardWork=hardWork-20;
+                soldiers=soldiers+1;
+
+            }
+
+            else{
+                window,alert("Work Harder WORK HARDER");
+            }
+
+            document.getElementById("soldierCounter").innerHTML = soldiers;
+            document.getElementById("workCounter").innerHTML = hardWork;
+
+         }
+         function conquerUSSR(){
+            if(soldiers >= 20){
+                window.alert("They has fallen to your military might!");
+                soldiers=soldiers-20
+            }
+            else{
+                window.alert("The Enemy Army destroys your forces!");
+                soldiers=0;
+                document.getElementById("soldierCounter").innerHTML=soldiers;
+            }
+         }
+     </script>
+         </div>
+     </head>
+
+     <body>
+           <div class="sidenav">
+            <a href="PasswordPawn.html">Home</a>
+            <a href="aboutPage.html">About</a>
+            <a href="conquerRussia.html">Mini Games</a>
+           </div>
+         <input type="button" id="workBtn" value="Generate Hard Work" class="main" onClick="genWork()"><br>
+         <h1 class="main">Hard Work Generated:</h1><div id="workCounter" class="main">0</div>
+         <input type="button" id="buySoldier" value="Buy Soldier" class="main" onClick="buySoldier()">
+         <h1 class="main">Soldiers:</h1><div id="soldierCounter" class="main">0</div>
+         <input type="button" id="conqueUSSR" value="DECLARE VICTORY" class="main" onClick="conquerUSSR()">
+    </body>
+</html>

@@ -1,0 +1,60 @@
+*{
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.main{
+		text-align: center;
+		font-size: 30px;
+}
+body{
+    background-color: #fafafa;
+}
+.login{
+        background-image: url('LOGOOFFICIAL.jpg');
+		width: 250px;
+		height: 250px;
+		margin: auto;
+		border: 15px solid lightgrey;
+    box-shadow: 5px 10px 8px #888888;
+		padding: 10px;
+        background-size: cover;
+        display: block;
+        margin: 0 auto;
+
+}
+.pass {
+		text-align:center;
+		margin: 0 auto;
+        width: 246px;
+        height: 25px;
+        border: 2px solid gray;
+        opacity: 0.5;
+
+}
+.usr {
+	text-align:center;
+	margin: 0 auto;
+    width: 246px;
+    height: 25px;
+    border: 2px solid gray;
+    opacity: 0.5;
+
+}
+.buttons{
+	text-align: center;
+    margin: 0 auto;
+    margin-right:10px;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 14px;
+    color: white;
+    padding: 11px 22px;
+    background-color: black;
+
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    }
+
+.buttons:hover{
+    background-color: #555555;
+    color: white;
+   }
