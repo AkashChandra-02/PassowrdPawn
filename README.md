@@ -11,4 +11,4 @@ I'd like to thank wwwtyro for his Javascript encryption libary, which was the ba
 
 You can find it here:  https://github.com/wwwtyro/cryptico
 
-Some of the design was created using a w3school's template. 
+Some of the UX was created using a w3school's template. 
