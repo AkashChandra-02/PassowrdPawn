@@ -1,5 +1,5 @@
 # PasswordPawn
-A password manager in HTML/JavaScript at the Code 211 hackathon, which was about 17 hours, the rest of debugging and testing.
+A password manager in HTML/JavaScript at the Code 211 hackathon, which was about 9 hours, the rest of debugging and testing. The total time was 17 hours from idea to final product.
 
 This was by a team of 4, 2 of which were beginners. This hasn't been used since February 26, 2018, so there may bugs. 
 
